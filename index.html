@@ -1,40 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Orgnl Media</title>
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400&display=swap"
+        rel="stylesheet">
+
     <style>
-        body{
-            background:#111;
-            color:white;
-            font-family:Montserrat, Helvetica, sans-serif;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            height:100vh;
-            margin:0;
-            text-align:center;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        h1{
-            font-size:40px;
-            margin:0;
+        body {
+            background: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 24px;
         }
 
-        p{
-            font-family:Poppins, sans-serif;
-            font-size:22px;
-            color:#aaa;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .logo {
+            width: 50vw;
+            max-width: 500px;
+            min-width: 180px;
+            height: auto;
+        }
+
+        h2 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #111;
+        }
+
+        p {
+            font-family: "Poppins", sans-serif;
+            font-size: 1rem;
+            color: #8a8a8a;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            .logo {
+                width: 50vw;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 769px) {
+
+            .logo {
+                width: 32vw;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.05rem;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<div>
-    <h1>We're busy making some content guys</h1>
-    <p>website coming soon.</p>
-</div>
+    <div class="container">
+
+        <img src="logo.png" alt="Orgnl Media" class="logo">
+
+        <h2>We're busy making some cool content.</h2>
+
+        <p>Website coming soon.</p>
+
+    </div>
 
 </body>
+
 </html>
