@@ -112,6 +112,132 @@
 
     </div>
 
+    <!-- PORTFOLIO DOWNLOAD SECTION -->
+<section class="portfolio-download">
+
+    <p class="portfolio-line">
+        We could tell you we're good.<br>
+        but this is probably easier.
+    </p>
+
+    <a
+        href="assets/portfolio/Orgnl media Portfolio.pdf"
+        download
+        class="portfolio-button"
+        id="portfolioDownload"
+    >
+        DOWNLOAD PORTFOLIO
+        <span class="portfolio-arrow">↓</span>
+    </a>
+
+
+    <style>
+
+        .portfolio-download {
+            margin-top: 42px;
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .portfolio-line {
+            font-family: "Poppins", sans-serif;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #777;
+            margin-bottom: 18px;
+        }
+
+        .portfolio-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+
+            padding: 14px 22px;
+
+            background: #000;
+            color: #fff;
+
+            border: 2px solid #000;
+            border-radius: 100px;
+
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+
+            text-decoration: none;
+
+            transition:
+                background 0.25s ease,
+                color 0.25s ease,
+                transform 0.25s ease;
+        }
+
+        .portfolio-arrow {
+            font-size: 1rem;
+            transition: transform 0.25s ease;
+        }
+
+        .portfolio-button:hover {
+            background: #fff;
+            color: #000;
+            transform: translateY(-2px);
+        }
+
+        .portfolio-button:hover .portfolio-arrow {
+            transform: translateY(3px);
+        }
+
+        .portfolio-button:active {
+            transform: translateY(0);
+        }
+
+
+        /* Mobile */
+
+        @media (max-width: 767px) {
+
+            .portfolio-download {
+                margin-top: 34px;
+            }
+
+            .portfolio-line {
+                font-size: 0.82rem;
+            }
+
+            .portfolio-button {
+                padding: 13px 19px;
+                font-size: 0.66rem;
+            }
+
+        }
+
+    </style>
+
+
+    <script>
+
+        const portfolioButton =
+            document.getElementById("portfolioDownload");
+
+        portfolioButton.addEventListener("click", function () {
+
+            const arrow =
+                portfolioButton.querySelector(".portfolio-arrow");
+
+            arrow.textContent = "✓";
+
+            setTimeout(function () {
+                arrow.textContent = "↓";
+            }, 1800);
+
+        });
+
+    </script>
+
+</section>
+
 </body>
 
 </html>
