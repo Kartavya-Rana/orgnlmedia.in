@@ -5,238 +5,1303 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Orgnl Media</title>
+    <title>Orgnl Media — Creative Agency</title>
 
-    <!-- Fonts -->
+    <meta name="description"
+        content="Orgnl Media is a creative agency based in Gandhinagar. Content Creation, Social Media Management and Meta Ads.">
+
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:wght@300;400;500&display=swap"
         rel="stylesheet">
 
-    <!-- Favicons -->
+    <!-- FAVICONS -->
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
     <link rel="icon" href="assets/favicon/favicon.ico">
     <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
 
+
     <style>
+
+        /* ==================================================
+           VARIABLES
+        ================================================== */
+
+        :root {
+            --dark: #171717;
+            --light: #f4f3f0;
+            --orange: #ff5a00;
+            --white: #ffffff;
+            --grey: #aaa7a3;
+        }
+
+
+        /* ==================================================
+           RESET
+        ================================================== */
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-       body {
-    background: #fff;
-    color: #111;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 24px;
-}
+        html {
+            scroll-behavior: smooth;
+        }
 
-       .container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+        body {
+            background: var(--dark);
+            color: var(--white);
+            font-family: "Poppins", sans-serif;
+            overflow-x: hidden;
+        }
 
-        .logo {
-            width: 30vw;
-            max-width: 360px;
-            min-width: 160px;
-            height: auto;
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        ::selection {
+            background: var(--orange);
+            color: var(--dark);
+        }
+
+
+        /* ==================================================
+           HEADER
+        ================================================== */
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+
+            padding: 28px 5vw;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            z-index: 20;
+        }
+
+        .header-logo {
+            width: 120px;
+            filter: invert(1);
+            display: block;
+        }
+
+        nav {
+            display: flex;
+            gap: 34px;
+
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--orange);
+        }
+
+
+        /* ==================================================
+           HERO
+        ================================================== */
+
+        .hero {
+            min-height: 100vh;
+
+            padding: 150px 7vw 90px;
+
+            display: flex;
+            align-items: center;
+
+            background: var(--dark);
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-inner {
+            width: 100%;
+            max-width: 1350px;
+
+            margin: auto;
+
+            position: relative;
+            z-index: 2;
+        }
+
+
+        /* We're a creative agency */
+
+        .agency-title {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+
+            line-height: 0.82;
+            letter-spacing: -0.055em;
+
+            margin-bottom: 85px;
+        }
+
+        .agency-small {
+            display: block;
+
+            font-size: clamp(1rem, 1.7vw, 1.6rem);
+
+            text-transform: lowercase;
+            letter-spacing: -0.03em;
+
+            margin-bottom: 7px;
+        }
+
+        .agency-creative {
+            display: block;
+
+            font-size: clamp(3.8rem, 9vw, 9rem);
+        }
+
+        .agency-agency {
+            display: block;
+
+            font-size: clamp(3.8rem, 9vw, 9rem);
+
+            margin-left: 22vw;
+        }
+
+
+        /* Founder philosophy */
+
+        .hero-bottom {
+            display: grid;
+            grid-template-columns: 55px minmax(260px, 460px);
+            gap: 25px;
+
+            align-items: start;
+        }
+
+        .orange-icon {
+            width: 48px;
+            height: 48px;
+
+            border-radius: 50%;
+
+            background: var(--orange);
+            color: var(--dark);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 1.35rem;
+        }
+
+        .hero-philosophy {
+            font-size: clamp(0.9rem, 1.25vw, 1.05rem);
+            line-height: 1.55;
+
+            max-width: 430px;
+
+            color: #f3f3f3;
+        }
+
+        .hero-philosophy strong {
+            color: var(--orange);
+            font-weight: 500;
+        }
+
+
+        /* giant decorative word */
+
+        .hero-ghost {
+            position: absolute;
+
+            right: -3vw;
+            bottom: -7vw;
+
+            font-family: "Montserrat", sans-serif;
+            font-size: clamp(10rem, 26vw, 28rem);
+            font-weight: 900;
+
+            letter-spacing: -0.1em;
+
+            color: rgba(255, 255, 255, 0.018);
+
+            pointer-events: none;
+            user-select: none;
+        }
+
+
+        /* ==================================================
+           SERVICES
+        ================================================== */
+
+        .services {
+            background: var(--dark);
+
+            padding: 80px 7vw 120px;
+        }
+
+        .services-inner {
+            max-width: 1350px;
+            margin: auto;
+        }
+
+        .section-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            font-family: "Montserrat", sans-serif;
+            font-size: clamp(2rem, 4vw, 4rem);
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            letter-spacing: -0.045em;
+        }
+
+        .section-number {
+            font-family: "Poppins", sans-serif;
+            font-size: 0.7rem;
+
+            color: var(--orange);
+        }
+
+
+        /* Service grid */
+
+        .service-list {
+            border: 1px solid var(--orange);
+        }
+
+        .service-row {
+            min-height: 130px;
+
+            display: grid;
+            grid-template-columns: 90px 1fr 60px;
+            align-items: center;
+
+            padding: 0 30px;
+
+            border-bottom: 1px solid var(--orange);
+
+            transition:
+                background 0.25s ease,
+                color 0.25s ease;
+        }
+
+        .service-row:last-child {
+            border-bottom: none;
+        }
+
+        .service-number {
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+
+            color: var(--orange);
+        }
+
+        .service-name {
+            font-family: "Montserrat", sans-serif;
+
+            font-size: clamp(2rem, 4.5vw, 5rem);
+
+            font-weight: 700;
+
+            line-height: 1;
+
+            letter-spacing: -0.05em;
+        }
+
+        .service-arrow {
+            width: 38px;
+            height: 38px;
+
+            background: var(--orange);
+            color: var(--dark);
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 1.2rem;
+
+            transition: transform 0.25s ease;
+        }
+
+        .service-row:hover {
+            background: var(--orange);
+            color: var(--dark);
+        }
+
+        .service-row:hover .service-number {
+            color: var(--dark);
+        }
+
+        .service-row:hover .service-arrow {
+            background: var(--dark);
+            color: var(--orange);
+
+            transform: rotate(45deg);
+        }
+
+
+        /* ==================================================
+           TRANSITION LINE
+        ================================================== */
+
+        .transition-line {
+            background: var(--dark);
+
+            padding: 10px 7vw 55px;
+
+            text-align: right;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: clamp(0.9rem, 1.4vw, 1.25rem);
+
+            font-weight: 700;
+        }
+
+        .transition-line span {
+            color: var(--orange);
+        }
+
+
+        /* ==================================================
+           PORTFOLIO
+        ================================================== */
+
+        .portfolio {
+            background: var(--light);
+            color: var(--dark);
+
+            min-height: 80vh;
+
+            padding: 110px 7vw;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .portfolio-inner {
+            width: 100%;
+            max-width: 1350px;
+
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+
+            gap: 10vw;
+
+            align-items: center;
+        }
+
+
+        /* orange line detail */
+
+        .portfolio-left {
+            position: relative;
+
+            padding-left: 28px;
+        }
+
+        .portfolio-left::before {
+            content: "";
+
+            position: absolute;
+            left: 0;
+            top: 5px;
+
+            width: 2px;
+            height: 45px;
+
+            background: var(--orange);
+        }
+
+        .portfolio-label {
+            font-family: "Montserrat", sans-serif;
+
+            font-size: 0.7rem;
+            font-weight: 800;
+
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+
+            color: var(--orange);
+
             margin-bottom: 28px;
         }
 
-        h2 {
+        .portfolio h2 {
             font-family: "Montserrat", sans-serif;
-            font-size: 1.2rem;
-            font-weight: 700;
-            line-height: 1.3;
-            margin-bottom: 10px;
+
+            font-size: clamp(3rem, 6vw, 6.5rem);
+
+            font-weight: 800;
+
+            line-height: 0.96;
+
+            letter-spacing: -0.055em;
         }
 
-        p {
-            font-family: "Poppins", sans-serif;
-            font-size: 0.75rem;
-            color: #8b8b8b;
+
+        /* portfolio right */
+
+        .portfolio-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
 
-        @media (min-width: 768px) {
+        .portfolio-right p {
+            font-size: 0.95rem;
+            line-height: 1.7;
 
-            .logo {
-                width: 22vw;
-                max-width: 400px;
-            }
+            color: #646464;
 
-            h2 {
-                font-size: 1.4rem;
-            }
+            max-width: 420px;
 
-            p {
-                font-size: 0.85rem;
-            }
-        }
-
-        @media (max-width: 767px) {
-
-            .logo {
-                width: 30vw;
-                min-width: 130px;
-            }
-
-            h2 {
-                font-size: 1rem;
-            }
-
-            p {
-                font-size: 0.7rem;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="container">
-        
-        <img src="assets/images/logo.png" alt="Orgnl Media" class="logo">
-
-        <h2>website coming soon.</h2>
-
-    </div>
-
-    <!-- PORTFOLIO DOWNLOAD SECTION -->
-<section class="portfolio-download">
-
-    <p class="portfolio-line">
-        We could tell you we're good.<br>
-        but this is probably easier.
-    </p>
-
-    <a
-        href="assets/portfolio/Orgnl media Portfolio.pdf"
-        download
-        class="portfolio-button"
-        id="portfolioDownload"
-    >
-        DOWNLOAD PORTFOLIO
-        <span class="portfolio-arrow">↓</span>
-    </a>
-
-
-    <style>
-
-        .portfolio-download {
-    margin-top: 5px;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-}
-
-        .portfolio-line {
-            font-family: "Poppins", sans-serif;
-            font-size: 0.9rem;
-            line-height: 1.6;
-            color: #777;
-            margin-bottom: 18px;
+            margin-bottom: 30px;
         }
 
         .portfolio-button {
             display: inline-flex;
+
             align-items: center;
             justify-content: center;
-            gap: 12px;
 
-            padding: 14px 22px;
+            gap: 25px;
 
-            background: #000;
-            color: #fff;
+            padding: 17px 25px;
 
-            border: 2px solid #000;
-            border-radius: 100px;
+            border: 1px solid var(--dark);
 
             font-family: "Montserrat", sans-serif;
-            font-size: 0.72rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
 
-            text-decoration: none;
+            font-size: 0.7rem;
+            font-weight: 800;
+
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
 
             transition:
                 background 0.25s ease,
-                color 0.25s ease,
-                transform 0.25s ease;
+                color 0.25s ease;
         }
 
-        .portfolio-arrow {
-            font-size: 1rem;
+        .portfolio-button span {
+            color: var(--orange);
+
+            font-size: 1.1rem;
+
             transition: transform 0.25s ease;
         }
 
         .portfolio-button:hover {
-            background: #fff;
-            color: #000;
-            transform: translateY(-2px);
+            background: var(--dark);
+            color: var(--light);
         }
 
-        .portfolio-button:hover .portfolio-arrow {
-            transform: translateY(3px);
-        }
-
-        .portfolio-button:active {
-            transform: translateY(0);
+        .portfolio-button:hover span {
+            transform: translateY(4px);
         }
 
 
-        /* Mobile */
+        /* ==================================================
+           CONTACT
+        ================================================== */
+
+        .contact {
+            background: var(--dark);
+            color: var(--white);
+
+            padding: 110px 7vw 35px;
+        }
+
+        .contact-inner {
+            max-width: 1350px;
+            margin: auto;
+        }
+
+        .contact-eyebrow {
+            font-family: "Montserrat", sans-serif;
+
+            font-size: 0.7rem;
+            font-weight: 800;
+
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+
+            color: var(--orange);
+
+            margin-bottom: 25px;
+        }
+
+        .contact-title {
+            font-family: "Montserrat", sans-serif;
+
+            font-size: clamp(3.2rem, 7vw, 7.5rem);
+
+            font-weight: 800;
+
+            line-height: 0.93;
+
+            letter-spacing: -0.06em;
+
+            max-width: 1100px;
+
+            margin-bottom: 100px;
+        }
+
+
+        /* details */
+
+        .contact-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 100px;
+
+            padding-bottom: 80px;
+        }
+
+        .contact-label {
+            font-family: "Montserrat", sans-serif;
+
+            font-size: 0.65rem;
+            font-weight: 700;
+
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+
+            color: var(--orange);
+
+            margin-bottom: 18px;
+        }
+
+        .phone {
+            display: block;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: clamp(1.6rem, 3vw, 3rem);
+
+            font-weight: 600;
+
+            letter-spacing: -0.035em;
+
+            margin-bottom: 25px;
+
+            transition: color 0.2s ease;
+        }
+
+        .phone:hover {
+            color: var(--orange);
+        }
+
+        .instagram {
+            display: inline-block;
+
+            font-size: 1rem;
+
+            border-bottom: 1px solid var(--orange);
+
+            padding-bottom: 4px;
+
+            transition: color 0.2s ease;
+        }
+
+        .instagram:hover {
+            color: var(--orange);
+        }
+
+        address {
+            font-style: normal;
+
+            font-size: clamp(1rem, 1.5vw, 1.25rem);
+
+            line-height: 1.7;
+
+            color: #d0d0d0;
+        }
+
+
+        /* ==================================================
+           FOOTER
+        ================================================== */
+
+        footer {
+            border-top: 1px solid #444;
+
+            padding-top: 25px;
+
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+
+            font-family: "Montserrat", sans-serif;
+
+            font-size: 0.6rem;
+            font-weight: 600;
+
+            letter-spacing: 0.12em;
+
+            text-transform: uppercase;
+
+            color: #888;
+        }
+
+        footer strong {
+            color: var(--orange);
+        }
+
+
+        /* ==================================================
+           MOBILE
+        ================================================== */
 
         @media (max-width: 767px) {
 
-            .portfolio-download {
-                margin-top: 5px;
+
+            /* HEADER */
+
+            header {
+                padding: 20px 6vw;
             }
 
-            .portfolio-line {
+            .header-logo {
+                width: 90px;
+            }
+
+            nav {
+                gap: 15px;
+
+                font-size: 0.52rem;
+            }
+
+            nav a:first-child {
+                display: none;
+            }
+
+
+            /* HERO */
+
+            .hero {
+                min-height: 100svh;
+
+                padding: 120px 7vw 70px;
+            }
+
+            .agency-title {
+                margin-bottom: 65px;
+            }
+
+            .agency-small {
+                font-size: 1rem;
+            }
+
+            .agency-creative,
+            .agency-agency {
+                font-size: clamp(3.3rem, 16vw, 5.3rem);
+            }
+
+            .agency-agency {
+                margin-left: 18vw;
+            }
+
+            .hero-bottom {
+                grid-template-columns: 42px 1fr;
+
+                gap: 18px;
+            }
+
+            .orange-icon {
+                width: 38px;
+                height: 38px;
+
+                font-size: 1rem;
+            }
+
+            .hero-philosophy {
                 font-size: 0.82rem;
+
+                max-width: 290px;
             }
 
-            .portfolio-button {
-                padding: 13px 19px;
-                font-size: 0.66rem;
+
+            /* SERVICES */
+
+            .services {
+                padding: 70px 6vw 85px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .service-row {
+                min-height: 100px;
+
+                grid-template-columns: 35px 1fr;
+
+                padding: 0 15px;
+            }
+
+            .service-number {
+                font-size: 0.6rem;
+            }
+
+            .service-name {
+                font-size: clamp(1.6rem, 7.5vw, 2.7rem);
+
+                line-height: 1.05;
+            }
+
+            .service-arrow {
+                display: none;
+            }
+
+            .transition-line {
+                padding: 5px 7vw 45px;
+
+                font-size: 0.8rem;
+            }
+
+
+            /* PORTFOLIO */
+
+            .portfolio {
+                min-height: auto;
+
+                padding: 85px 7vw;
+            }
+
+            .portfolio-inner {
+                grid-template-columns: 1fr;
+
+                gap: 55px;
+            }
+
+            .portfolio-left {
+                padding-left: 20px;
+            }
+
+            .portfolio h2 {
+                font-size: clamp(2.7rem, 12vw, 4.3rem);
+            }
+
+            .portfolio-right p {
+                font-size: 0.85rem;
+            }
+
+
+            /* CONTACT */
+
+            .contact {
+                padding: 85px 7vw 30px;
+            }
+
+            .contact-title {
+                font-size: clamp(3rem, 13vw, 4.7rem);
+
+                margin-bottom: 70px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+
+                gap: 55px;
+
+                padding-bottom: 65px;
+            }
+
+            .phone {
+                font-size: 1.6rem;
+            }
+
+            address {
+                font-size: 0.9rem;
+            }
+
+            footer {
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                gap: 10px;
             }
 
         }
 
+
     </style>
 
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         HEADER
+    ================================================== -->
+
+    <header>
+
+        <a href="#home">
+
+            <img
+                src="assets/images/logo.png"
+                alt="Orgnl Media"
+                class="header-logo"
+            >
+
+        </a>
+
+
+        <nav>
+
+            <a href="#portfolio">
+                Portfolio
+            </a>
+
+            <a
+                href="https://www.instagram.com/orgnl.media/"
+                target="_blank"
+                rel="noopener"
+            >
+                Instagram
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- ==================================================
+             HERO
+        ================================================== -->
+
+        <section class="hero" id="home">
+
+
+            <div class="hero-inner">
+
+
+                <div class="agency-title">
+
+                    <span class="agency-small">
+                        we're a
+                    </span>
+
+                    <span class="agency-creative">
+                        Creative
+                    </span>
+
+                    <span class="agency-agency">
+                        Agency
+                    </span>
+
+                </div>
+
+
+
+                <div class="hero-bottom">
+
+
+                    <div class="orange-icon">
+                        ✋
+                    </div>
+
+
+                    <p class="hero-philosophy">
+
+                        Every business begins with someone taking a chance
+                        on an idea.
+
+                        <br><br>
+
+                        We believe every founder deserves a team that
+                        takes the time to understand
+                        <strong>what they're building.</strong>
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="hero-ghost">
+                ORGNL
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             SERVICES
+        ================================================== -->
+
+        <section class="services" id="services">
+
+
+            <div class="services-inner">
+
+
+                <div class="section-top">
+
+                    <h2 class="section-title">
+                        What We Do
+                    </h2>
+
+                    <span class="section-number">
+                        01 /
+                    </span>
+
+                </div>
+
+
+
+                <div class="service-list">
+
+
+                    <div class="service-row">
+
+                        <span class="service-number">
+                            01/
+                        </span>
+
+                        <div class="service-name">
+                            Content Creation
+                        </div>
+
+                        <div class="service-arrow">
+                            →
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="service-row">
+
+                        <span class="service-number">
+                            02/
+                        </span>
+
+                        <div class="service-name">
+                            Social Media Management
+                        </div>
+
+                        <div class="service-arrow">
+                            →
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="service-row">
+
+                        <span class="service-number">
+                            03/
+                        </span>
+
+                        <div class="service-name">
+                            Meta Ads
+                        </div>
+
+                        <div class="service-arrow">
+                            →
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <div class="transition-line">
+
+            Before we tell you
+            <span>what we do,</span><br>
+
+            we'd rather show you
+            <span>what we've done.</span>
+
+        </div>
+
+
+
+        <!-- ==================================================
+             PORTFOLIO
+        ================================================== -->
+
+        <section class="portfolio" id="portfolio">
+
+
+            <div class="portfolio-inner">
+
+
+                <div class="portfolio-left">
+
+
+                    <div class="portfolio-label">
+                        Our Work
+                    </div>
+
+
+                    <h2>
+
+                        We could tell you
+                        we're good.
+
+                        <br>
+
+                        This is probably
+                        easier.
+
+                    </h2>
+
+
+                </div>
+
+
+
+                <div class="portfolio-right">
+
+
+                    <p>
+
+                        Our work, the thinking behind it,
+                        and what happened when we paid
+                        attention to what made the businesses
+                        interesting in the first place.
+
+                    </p>
+
+
+                    <a
+                        href="assets/portfolio/Orgnl media Portfolio.pdf"
+                        download
+                        class="portfolio-button"
+                        id="portfolioDownload"
+                    >
+
+                        Download Portfolio
+
+                        <span id="portfolioArrow">
+                            ↓
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             CONTACT
+        ================================================== -->
+
+        <section class="contact" id="contact">
+
+
+            <div class="contact-inner">
+
+
+                <div class="contact-eyebrow">
+                    Say Hello
+                </div>
+
+
+                <h2 class="contact-title">
+
+                    Let's make something
+                    worth remembering.
+
+                </h2>
+
+
+
+                <div class="contact-grid">
+
+
+                    <!-- PHONE + INSTAGRAM -->
+
+                    <div>
+
+
+                        <div class="contact-label">
+                            Let's Talk
+                        </div>
+
+
+                        <a
+                            href="tel:+919724657662"
+                            class="phone"
+                        >
+                            +91 97246 57662
+                        </a>
+
+
+                        <a
+                            href="https://www.instagram.com/orgnl.media/"
+                            target="_blank"
+                            rel="noopener"
+                            class="instagram"
+                        >
+                            @orgnl.media ↗
+                        </a>
+
+
+                    </div>
+
+
+
+                    <!-- ADDRESS -->
+
+                    <div>
+
+
+                        <div class="contact-label">
+                            Find Us
+                        </div>
+
+
+                        <address>
+
+                            281, Suyash Solitaire<br>
+
+                            Kudasan-Por Road, Gandhinagar<br>
+
+                            Gujarat — 382421
+
+                        </address>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <footer>
+
+
+                    <span>
+                        © <strong>ORGNL</strong> MEDIA 2026
+                    </span>
+
+
+                    <span>
+                        Gandhinagar, Gujarat
+                    </span>
+
+
+                </footer>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+    ================================================== -->
 
     <script>
+
 
         const portfolioButton =
             document.getElementById("portfolioDownload");
 
+
+        const portfolioArrow =
+            document.getElementById("portfolioArrow");
+
+
         portfolioButton.addEventListener("click", function () {
 
-            const arrow =
-                portfolioButton.querySelector(".portfolio-arrow");
 
-            arrow.textContent = "✓";
+            portfolioArrow.textContent = "✓";
+
 
             setTimeout(function () {
-                arrow.textContent = "↓";
+
+                portfolioArrow.textContent = "↓";
+
             }, 1800);
+
 
         });
 
+
     </script>
 
-</section>
 
 </body>
 
