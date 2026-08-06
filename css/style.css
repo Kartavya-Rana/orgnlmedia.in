@@ -354,3 +354,381 @@ nav a:hover{
     }
 
 }
+
+
+
+
+/* =========================================================
+   WHAT WE DO
+========================================================= */
+
+.services{
+
+    background:var(--bg);
+
+}
+
+.services-heading{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+
+    margin-bottom:60px;
+
+}
+
+.services-title{
+
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+
+}
+
+.section-number{
+
+    font-family:var(--heading);
+
+    font-size:.72rem;
+    font-weight:700;
+
+    letter-spacing:.15em;
+
+    color:var(--orange);
+
+}
+
+.services-title h2{
+
+    font-size:3rem;
+    font-weight:700;
+    line-height:1;
+
+}
+
+.services-intro{
+
+    width:320px;
+
+    color:var(--grey);
+
+    font-size:.92rem;
+    line-height:1.7;
+
+}
+
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+}
+
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.service-card{
+
+    display:flex;
+    flex-direction:column;
+
+    min-height:460px;
+
+    padding:34px;
+
+    border:var(--border);
+
+    transition:var(--transition);
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.service-top{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.service-count{
+
+    font-family:var(--heading);
+
+    font-size:.72rem;
+    font-weight:700;
+
+    letter-spacing:.12em;
+
+    color:var(--orange);
+
+}
+
+.service-type{
+
+    font-size:.7rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+    color:var(--grey);
+
+}
+
+.service-card h3{
+
+    margin-top:44px;
+
+    font-size:2.55rem;
+    font-weight:700;
+    line-height:.95;
+
+}
+
+
+
+/* =========================================================
+   SERVICE LIST
+========================================================= */
+
+.service-list{
+
+    margin-top:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    border-top:1px solid currentColor;
+
+}
+
+.service-list div{
+
+    position:relative;
+
+    padding:
+
+        15px
+        12px
+        15px
+        26px;
+
+    border-bottom:1px solid currentColor;
+
+    font-size:.72rem;
+
+    line-height:1.45;
+
+}
+
+.service-list div:nth-child(odd){
+
+    border-right:1px solid currentColor;
+
+}
+
+
+/* orange bullet */
+
+.service-list div::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:12px;
+    top:50%;
+
+    width:5px;
+    height:5px;
+
+    transform:translateY(-50%);
+
+    border-radius:50%;
+
+    background:var(--orange);
+
+}
+
+
+
+/* =========================================================
+   ORANGE CARD
+========================================================= */
+
+.service-orange{
+
+    background:var(--orange);
+
+    color:var(--black);
+
+    border:none;
+
+}
+
+.service-orange .service-count{
+
+    color:var(--black);
+
+}
+
+.service-orange .service-type{
+
+    color:#3d3d3d;
+
+}
+
+.service-orange .service-list div::before{
+
+    background:var(--black);
+
+}
+
+
+
+/* =========================================================
+   WIDE CARD
+========================================================= */
+
+.service-wide{
+
+    grid-column:1 / -1;
+
+    min-height:300px;
+
+}
+
+.service-wide-content{
+
+    display:grid;
+
+    grid-template-columns:330px 1fr;
+
+    gap:70px;
+
+    align-items:end;
+
+    margin-top:auto;
+
+}
+
+.service-wide h3{
+
+    margin-top:0;
+
+}
+
+.service-wide .service-list{
+
+    margin-top:0;
+
+}
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:900px){
+
+    .services-heading{
+
+        flex-direction:column;
+        align-items:flex-start;
+
+        gap:24px;
+
+    }
+
+    .services-intro{
+
+        width:100%;
+
+    }
+
+    .services-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .service-wide{
+
+        grid-column:auto;
+
+    }
+
+    .service-wide-content{
+
+        display:block;
+
+    }
+
+    .service-wide h3{
+
+        margin-bottom:40px;
+
+    }
+
+}
+
+
+
+@media(max-width:650px){
+
+    .services-title h2{
+
+        font-size:2.3rem;
+
+    }
+
+    .service-card{
+
+        min-height:auto;
+
+        padding:26px;
+
+    }
+
+    .service-card h3{
+
+        margin-top:34px;
+
+        font-size:2rem;
+
+    }
+
+    .service-list{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .service-list div{
+
+        border-right:none !important;
+
+    }
+
+}
