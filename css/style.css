@@ -1449,8 +1449,19 @@ color:rgba(244,243,241,.75);
     .contact-card p{
 
         font-size:.82rem;
+        line-height:1.6;
+
+    word-break:break-word;
 
     }
+
+   .phone-number{
+
+    white-space:nowrap;
+
+    font-size:.88rem;
+
+}
 
 }
 
@@ -2181,44 +2192,57 @@ nav a:hover{
 
     }
    
-   header{
+  
+    header{
 
-    padding:18px 0;
+        padding:18px 0;
 
-}
+    }
 
-header .container{
+    header .container{
 
-    align-items:center;
+        display:flex;
 
-}
+        justify-content:space-between;
 
-.logo img{
+        align-items:center;
 
-    width:130px;
+        padding:0 18px;
 
-}
+    }
 
-header nav{
+    .logo{
 
-    gap:28px;
+        width:105px;
 
-}
+        flex-shrink:0;
 
-header nav a{
+    }
 
-    font-size:.72rem;
+    .logo img{
 
-    letter-spacing:.12em;
+        width:100%;
 
-}
+    }
 
-   .contact-card p{
+    header nav{
 
-    font-size:1rem;
+        display:flex;
 
-    line-height:1.5;
+        gap:18px;
 
-}
+        flex-shrink:1;
+
+    }
+
+    header nav a{
+
+        font-size:.68rem;
+
+        letter-spacing:.08em;
+
+        white-space:nowrap;
+
+    }
 
 }
