@@ -226,9 +226,11 @@ header{
 
     width:100%;
 
-    padding:34px 0;
+    padding:26px 0;
 
     background:var(--black);
+
+    border-bottom:1px solid rgba(255,255,255,.06);
 
 }
 
@@ -260,7 +262,7 @@ header .container{
 
 .logo{
 
-    width:150px;
+    width:115px;
 
 }
 
@@ -2214,7 +2216,7 @@ nav a:hover{
 
     .logo{
 
-        width:105px;
+        width:90px;
 
         flex-shrink:0;
 
