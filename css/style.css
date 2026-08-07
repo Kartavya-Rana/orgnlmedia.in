@@ -338,13 +338,14 @@ nav a:hover::after{
 
 .hero{
 
-    min-height:100vh;
+    min-height:calc(100vh - 96px);
 
     display:flex;
     align-items:center;
 
-    padding:120px 0;
-    background:#181818;
+    padding:70px 0 90px;
+
+    background:var(--black);
 
     color:var(--cream);
 
@@ -504,11 +505,13 @@ color:rgba(244,243,241,.75);
 
 @media(max-width:768px){
 
-    .hero{
+  .hero{
 
-        padding:140px 0 80px;
+    min-height:auto;
 
-    }
+    padding:50px 0 70px;
+
+}
 
     .hero-label{
 
@@ -520,7 +523,7 @@ color:rgba(244,243,241,.75);
 
         width:55px;
 
-        margin-bottom:30px;
+            margin:24px 0 30px;
 
     }
 
@@ -2139,7 +2142,7 @@ color:rgba(244,243,241,.75);
 
 header{
 
-    background:rgba(24,24,24,.88);
+
 
     backdrop-filter:blur(16px);
 
