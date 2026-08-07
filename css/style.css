@@ -224,20 +224,11 @@ section{
 ========================================================= */
 header{
 
-    position:fixed;
-
-    top:0;
-    left:0;
-
     width:100%;
-
-    z-index:1000;
 
     padding:34px 0;
 
-    background:rgba(24,24,24,.85);
-
-    backdrop-filter:blur(16px);
+    background:var(--black);
 
 }
 
@@ -350,8 +341,7 @@ nav a:hover::after{
     display:flex;
     align-items:center;
 
-    padding:180px 0 120px;
-
+    padding:120px 0;
     background:#181818;
 
     color:var(--cream);
@@ -1462,6 +1452,17 @@ color:rgba(244,243,241,.75);
     font-size:.88rem;
 
 }
+   .hero{
+    padding:90px 0;
+}
+
+.about-article{
+    padding:90px 0;
+}
+
+.contact-page{
+    padding:90px 0;
+}
 
 }
 
@@ -1565,7 +1566,7 @@ color:rgba(244,243,241,.75);
 
     color:var(--cream);
 
-    padding:180px 0 120px;
+       padding:120px 0;
 
 }
 
@@ -1866,7 +1867,7 @@ color:rgba(244,243,241,.75);
 
     min-height:100vh;
 
-    padding:180px 0 120px;
+    padding:120px 0;
 
 }
 
