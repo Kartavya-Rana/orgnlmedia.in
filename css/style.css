@@ -2180,5 +2180,45 @@ nav a:hover{
         width:100%;
 
     }
+   
+   header{
+
+    padding:18px 0;
+
+}
+
+header .container{
+
+    align-items:center;
+
+}
+
+.logo img{
+
+    width:130px;
+
+}
+
+header nav{
+
+    gap:28px;
+
+}
+
+header nav a{
+
+    font-size:.72rem;
+
+    letter-spacing:.12em;
+
+}
+
+   .contact-card p{
+
+    font-size:1rem;
+
+    line-height:1.5;
+
+}
 
 }
