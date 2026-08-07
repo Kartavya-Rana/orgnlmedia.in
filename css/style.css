@@ -1628,6 +1628,8 @@ color:rgba(244,243,241,.75);
     line-height:.92;
 
     letter-spacing:-.04em;
+   
+   max-width:700px;
 
     color:var(--cream);
 
