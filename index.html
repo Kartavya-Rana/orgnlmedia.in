@@ -98,74 +98,59 @@
 
         <nav>
 
-            <a href="about.html">
-                About
+            <a href="pages/about.html">
+                About Us
             </a>
 
-            <a href="contact.html">
+            <a href="pages/contact.html">
                 Contact
             </a>
 
         </nav>
 
-    </div>
+    </div> 
 
 </header>
 
 
 
-<!-- ===========================
-     HERO
-=========================== -->
-
 <section class="hero">
 
     <div class="container hero-container">
-
 
         <!-- LEFT CONTENT -->
 
         <div class="hero-content">
 
-            <div class="hero-label">
+            <p class="hero-small">
+                We're a
+            </p>
 
-                <img
-                    src="assets/images/Hand-icon-orgnl.png"
-                    alt=""
-                    aria-hidden="true"
-                >
+            <h2 class="hero-label">
+                CREATIVE<br>
+                AGENCY
+            </h2>
 
-                <p>
+            <img
+                src="assets/icons/Hand-icon-orgnl.png"
+                alt=""
+                aria-hidden="true"
+                class="hero-hand"
+            >
 
-                    we're a
-
-                    <span>
-                        CREATIVE
-                    </span>
-
-                    <span>
-                        AGENCY
-                    </span>
-
-                </p>
-
-            </div>
-
-
-
-            <h1>
+            <h2>
 
                 Every business begins with
                 someone taking a chance
                 on an idea.
 
-            </h1>
-
-
+            </h2>
 
             <p class="hero-description">
 
-                We believe
+                We believe every founder deserves
+                a team that takes the time to
+                understand what they're building.
 
             </p>
 
@@ -178,20 +163,17 @@
         <div class="hero-image">
 
             <img
-                src="assets/images/hero-team.png"
+                src="assets/images/shoot-wide.png"
                 alt="The Orgnl Media team"
             >
 
         </div>
 
-
     </div>
 
 </section>
 
-
-
-     <!-- =========================================================
+<!-- =========================================================
      WHAT WE DO
 ========================================================= -->
 
@@ -199,19 +181,19 @@
 
     <div class="container">
 
+        <!-- =======================================
+             HEADING
+        ======================================== -->
+
         <div class="services-heading">
 
-            <div class="services-title">
+            <span class="section-number">
+                01 /
+            </span>
 
-                <span class="section-number">
-                    01 /
-                </span>
-
-                <h2>
-                    What We Do
-                </h2>
-
-            </div>
+            <h2>
+                What We Do
+            </h2>
 
             <p class="services-intro">
 
@@ -223,13 +205,28 @@
         </div>
 
 
+        <!-- =======================================
+             IMAGE
+        ======================================== -->
+
+        <figure class="services-image">
+
+            <img
+                src="assets/images/team-focused.jpg"
+                alt="The Orgnl Media team"
+            >
+
+        </figure>
+
+
+        <!-- =======================================
+             SERVICES
+        ======================================== -->
 
         <div class="services-grid">
 
 
-            <!-- =======================================
-                 CONTENT CREATION
-            ======================================== -->
+            <!-- CONTENT CREATION -->
 
             <article class="service-card">
 
@@ -245,14 +242,12 @@
 
                 </div>
 
-
                 <h3>
 
                     Content<br>
                     Creation
 
                 </h3>
-
 
                 <div class="service-list">
 
@@ -274,9 +269,7 @@
 
 
 
-            <!-- =======================================
-                 SOCIAL MEDIA MANAGEMENT
-            ======================================== -->
+            <!-- SOCIAL MEDIA MANAGEMENT -->
 
             <article class="service-card service-orange">
 
@@ -292,14 +285,12 @@
 
                 </div>
 
-
                 <h3>
 
                     Social Media<br>
                     Management
 
                 </h3>
-
 
                 <div class="service-list">
 
@@ -317,9 +308,7 @@
 
 
 
-            <!-- =======================================
-                 GROWTH MARKETING
-            ======================================== -->
+            <!-- GROWTH MARKETING -->
 
             <article class="service-card service-wide">
 
@@ -330,11 +319,10 @@
                     </span>
 
                     <span class="service-type">
-                        Grow
+                        Scale
                     </span>
 
                 </div>
-
 
                 <div class="service-wide-content">
 
@@ -344,7 +332,6 @@
                         Marketing
 
                     </h3>
-
 
                     <div class="service-list">
 
@@ -364,44 +351,54 @@
 
             </article>
 
-
         </div>
 
     </div>
 
 </section>
 
-
-<!-- =========================================================
-     PORTFOLIO
-========================================================= -->
-
 <section class="portfolio" id="portfolio">
 
     <div class="container">
 
-        <div class="portfolio-content">
+        <div class="portfolio-grid">
 
-            <div class="portfolio-left">
+            <div class="portfolio-content">
 
                 <span class="section-number">
                     02 /
                 </span>
 
+                <span class="section-label">
+                    Portfolio
+                </span>
+
                 <h2>
 
-                    Before we tell you who we are,
-                    we'd rather show you what we can do.
+                    The work
+                    speaks first.
 
                 </h2>
 
                 <p>
 
                     Our portfolio brings together our work,
-                    approach, philosophy, and the stories
-                    behind the brands we've worked with.
+                    philosophy, process, and the stories
+                    behind the brands we've had the chance
+                    to work with.
 
                 </p>
+
+                <!-- MOBILE IMAGE -->
+
+                <div class="portfolio-image mobile-image">
+
+                    <img
+                        src="assets/images/holding-portfolio.png"
+                        alt="Holding the Orgnl Media Portfolio"
+                    >
+
+                </div>
 
                 <a
                     href="assets/portfolio/Orgnl media Portfolio.pdf"
@@ -416,12 +413,13 @@
             </div>
 
 
+            <!-- DESKTOP IMAGE -->
 
-            <div class="portfolio-right">
+            <div class="portfolio-image desktop-image">
 
                 <img
                     src="assets/images/holding-portfolio.png"
-                    alt="Orgnl Media Portfolio"
+                    alt="Holding the Orgnl Media Portfolio"
                 >
 
             </div>
@@ -432,275 +430,231 @@
 
 </section>
 
-        <!-- ==========================================================
-             CONTACT
-        ========================================================== -->
-
-        <section class="contact" id="contact">
-
-            <div class="container">
 
 
-                <div class="contact-top">
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="contact-heading">
+
+            <span class="section-number">
+                03 /
+            </span>
+
+            <span class="section-label">
+                Contact
+            </span>
+
+            <h2>
+                Want to make something<br>
+                people remember?
+            </h2>
+
+            <p class="contact-copy">
+                Whether you already have an idea or you're starting from scratch,
+                we'd love to hear what you're building.
+            </p>
+
+        </div>
 
 
-                    <div class="contact-title-wrap">
+
+        <div class="contact-grid">
 
 
-                        <div class="section-marker">
-                            03 / Say Hello
-                        </div>
+            <!-- FIND US -->
 
+            <a href="#" class="contact-card">
 
-                        <h2>
+                <div class="contact-icon">
 
-                            Want to make<br>
-                            something?
+                    <img
+                        src="assets/icons/location-icon-orange.png"
+                        alt=""
+                        class="icon-default"
+                    >
 
-                        </h2>
-
-
-                    </div>
-
-
-                    <p class="contact-note">
-
-                        Tell us what you're building.<br>
-                        We'll start there.
-
-                    </p>
-
+                    <img
+                        src="assets/icons/location-icon-black.png"
+                        alt=""
+                        class="icon-hover"
+                    >
 
                 </div>
 
+                <h3>
+                    Find Us
+                </h3>
+
+                <p>
+
+                    281, Suyash Solitaire<br>
+                    Kudasan–Por Road<br>
+                    Gandhinagar 382421
+
+                </p>
+
+            </a>
 
 
-                <div class="contact-rule"></div>
 
+            <!-- CALL US -->
 
+            <a
+                href="tel:919724657662"
+                class="contact-card"
+            >
 
-                <div class="contact-grid">
+                <div class="contact-icon">
 
-
-                    <!-- PHONE -->
-
-                    <a
-                        href="tel:+919724657662"
-                        class="contact-item"
+                    <img
+                        src="assets/icons/phone-icon-orange.png"
+                        alt=""
+                        class="icon-default"
                     >
 
-
-                        <div class="contact-icon-wrap">
-
-                            <img
-                                src="assets/icons/phone-icon-orange.png"
-                                alt=""
-                                class="contact-icon contact-icon-orange"
-                            >
-
-                            <img
-                                src="assets/icons/phone-icon-black.png"
-                                alt=""
-                                class="contact-icon contact-icon-black"
-                            >
-
-                        </div>
-
-
-                        <div class="contact-item-bottom">
-
-                            <div class="contact-label">
-                                Call
-                            </div>
-
-
-                            <div class="contact-value">
-                                +91 97246 57662
-                            </div>
-
-                        </div>
-
-
-                    </a>
-
-
-
-                    <!-- LOCATION -->
-
-                    <div class="contact-item">
-
-
-                        <div class="contact-icon-wrap">
-
-                            <img
-                                src="assets/icons/location-icon-orange.png"
-                                alt=""
-                                class="contact-icon contact-icon-orange"
-                            >
-
-                            <img
-                                src="assets/icons/location-icon-black.png"
-                                alt=""
-                                class="contact-icon contact-icon-black"
-                            >
-
-                        </div>
-
-
-                        <div class="contact-item-bottom">
-
-                            <div class="contact-label">
-                                Find Us
-                            </div>
-
-
-                            <div class="contact-value address-value">
-
-                                281, Suyash Solitaire<br>
-
-                                Kudasan-Por Road<br>
-
-                                Gandhinagar, Gujarat<br>
-
-                                382421
-
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-
-
-                    <!-- INSTAGRAM -->
-
-                    <a
-                        href="https://www.instagram.com/orgnl.media/"
-                        target="_blank"
-                        rel="noopener"
-                        class="contact-item"
+                    <img
+                        src="assets/icons/phone-icon-black.png"
+                        alt=""
+                        class="icon-hover"
                     >
-
-
-                        <div class="contact-icon-wrap">
-
-                            <img
-                                src="assets/icons/instagram-icon-orange.png"
-                                alt=""
-                                class="contact-icon contact-icon-orange"
-                            >
-
-                            <img
-                                src="assets/icons/instagram-icon-black.png"
-                                alt=""
-                                class="contact-icon contact-icon-black"
-                            >
-
-                        </div>
-
-
-                        <div class="contact-item-bottom">
-
-                            <div class="contact-label">
-                                Instagram
-                            </div>
-
-
-                            <div class="contact-value">
-                                @orgnl.media ↗
-                            </div>
-
-                        </div>
-
-
-                    </a>
-
-
-
-                    <!-- WEBSITE -->
-
-                    <a
-                        href="index.html"
-                        class="contact-item"
-                    >
-
-
-                        <div class="contact-icon-wrap">
-
-                            <img
-                                src="assets/icons/website-icon-orange.png"
-                                alt=""
-                                class="contact-icon contact-icon-orange"
-                            >
-
-                            <img
-                                src="assets/icons/website-icon-black.png"
-                                alt=""
-                                class="contact-icon contact-icon-black"
-                            >
-
-                        </div>
-
-
-                        <div class="contact-item-bottom">
-
-                            <div class="contact-label">
-                                Website
-                            </div>
-
-
-                            <div class="contact-value">
-                                orgnlmedia.in
-                            </div>
-
-                        </div>
-
-
-                    </a>
-
 
                 </div>
 
+                <h3>
+                    Call Us
+                </h3>
 
+                <p>
 
-                <!-- FOOTER -->
+                    +91 97246 57662
 
-                <footer class="footer">
+                </p>
 
-
-                    <span>
-
-                        © 2026
-
-                        <span class="footer-orange">
-                            ORGNL MEDIA
-                        </span>
-
-                    </span>
-
-
-                    <span>
-                        Gandhinagar, Gujarat
-                    </span>
-
-
-                    <span>
-                        Creative Agency
-                    </span>
-
-
-                </footer>
-
-
-            </div>
-
-        </section>
+            </a>
 
 
 
+            <!-- WRITE TO US -->
 
-    <!-- =========================================================
+            <a
+                href="mailto:connect@orgnlmedia.in"
+                class="contact-card"
+            >
+
+                <div class="contact-icon">
+
+                    <img
+                        src="assets/icons/website-icon-orange.png"
+                        alt=""
+                        class="icon-default"
+                    >
+
+                    <img
+                        src="assets/icons/website-icon-black.png"
+                        alt=""
+                        class="icon-hover"
+                    >
+
+                </div>
+
+                <h3>
+                    Write To Us
+                </h3>
+
+                <p>
+
+                    connect@orgnlmedia.in
+
+                </p>
+
+            </a>
+
+
+
+            <!-- FOLLOW US -->
+
+            <a
+                href="https://instagram.com/orgnl.media"
+                target="_blank"
+                class="contact-card"
+            >
+
+                <div class="contact-icon">
+
+                    <img
+                        src="assets/icons/instagram-icon-orange.png"
+                        alt=""
+                        class="icon-default"
+                    >
+
+                    <img
+                        src="assets/icons/instagram-icon-black.png"
+                        alt=""
+                        class="icon-hover"
+                    >
+
+                </div>
+
+                <h3>
+                    Follow Us
+                </h3>
+
+                <p>
+
+                    @orgnl.media
+
+                </p>
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ORGNL MEDIA
+            </p>
+
+            <p>
+                Gandhinagar, Gujarat
+            </p>
+
+            <a href="mailto:connect@orgnlmedia.in">
+                connect@orgnlmedia.in
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+
+<!-- =========================================================
      JAVASCRIPT
 ========================================================== -->
 
@@ -708,4 +662,3 @@
 
 </body>
 </html>
-
