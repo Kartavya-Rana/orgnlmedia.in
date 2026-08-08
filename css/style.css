@@ -367,87 +367,61 @@ nav a:hover::after{
 /* =========================================================
    LEFT
 ========================================================= */
-
-.hero-content{
-
-    max-width:500px;
-
-}
-
 .hero-small{
 
     margin-bottom:12px;
 
     font-family:var(--heading);
 
-    font-size:.9rem;
+    font-size:1.05rem;
 
     font-weight:600;
 
+    line-height:1.2;
+
     letter-spacing:.08em;
 
-color:rgba(244,243,241,.75);
+    color:rgba(244,243,241,.75);
+
 }
+
 
 .hero-label{
 
     margin-bottom:34px;
 
+    font-family:var(--heading);
+
     font-size:4.8rem;
 
-    line-height:.9;
+    font-weight:700;
+
+    line-height:1.08;
 
     letter-spacing:-.04em;
 
     text-transform:uppercase;
 
-}
-
-.hero-hand{
-
-    width:70px;
-
-    margin-bottom:40px;
+    color:var(--cream);
 
 }
 
-.hero h1{
+
+.hero-content > h2:not(.hero-label){
 
     margin-bottom:28px;
 
+    font-family:var(--heading);
+
     font-size:3.4rem;
 
-    line-height:1.02;
+    font-weight:700;
+
+    line-height:1.15;
 
     letter-spacing:-.04em;
 
-}
-
-.hero-description{
-
-    max-width:420px;
-
-    font-size:1rem;
-
-    line-height:1.4;
-
-    color:rgba(244,243,241,.72);
-
-    margin-top: 2rem;
-
-}
-
-.hero-label{
-
     color:var(--cream);
-   line-height:0.9;
-
-}
-
-.hero h2{
-
-    color:var(--cream);
-   line-height:1.4;
 
 }
 
