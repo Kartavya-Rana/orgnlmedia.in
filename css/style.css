@@ -440,6 +440,7 @@ color:rgba(244,243,241,.75);
 .hero-label{
 
     color:var(--cream);
+   line-height:0.9;
 
 }
 
