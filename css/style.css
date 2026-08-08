@@ -429,7 +429,7 @@ color:rgba(244,243,241,.75);
 
     font-size:1rem;
 
-    line-height:1;
+    line-height:1.4;
 
     color:rgba(244,243,241,.72);
 
@@ -446,6 +446,7 @@ color:rgba(244,243,241,.75);
 .hero h2{
 
     color:var(--cream);
+   line-height:1.4;
 
 }
 
